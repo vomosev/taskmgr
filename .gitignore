@@ -51,3 +51,6 @@ certs/
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Added by install_backend.js — the deploy writes real secrets into .env
+node_modules
