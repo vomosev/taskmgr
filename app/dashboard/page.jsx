@@ -30,8 +30,8 @@ function DashboardView() {
     setErrorMessage('');
     try {
       const [statsResult, tasksResult] = await Promise.all([
-        getTaskStats({ signal }),
-        getTasks({ sort: 'due_date', status: 'open' }, { signal })
+        getTaskStats(signal),
+        getTasks({ sort: 'due_date', status: 'open' }, signal)
       ]);
 
       if (signal && signal.aborted) return;
