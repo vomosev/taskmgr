@@ -408,6 +408,10 @@ small {
   gap: var(--space-8);
 }
 
+.cluster > * {
+  margin-block: 0;
+}
+
 .cluster {
   display: flex;
   flex-wrap: wrap;
