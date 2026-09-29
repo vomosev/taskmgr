@@ -212,7 +212,7 @@ export default function AppShell({ children }) {
       <footer className="site-footer">
         <div className="container site-footer__inner">
           <p className="site-footer__copy">
-            TaskMgr — plan, track and finish your work. Built for small teams and focused
+            TaskMgr - plan, track and finish your work. Built for small teams and focused
             individuals.
           </p>
           <ul className="site-footer__links cluster">
