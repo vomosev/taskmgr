@@ -71,7 +71,7 @@ export function AuthProvider({ children }) {
   const login = useCallback(async (email, password) => {
     setError(null);
     try {
-      const data = await apiLogin({ email, password });
+      const data = await apiLogin(email, password);
       const nextUser = data && data.user ? data.user : data;
       if (mountedRef.current) {
         setUser(nextUser || null);
@@ -91,7 +91,7 @@ export function AuthProvider({ children }) {
   const signup = useCallback(async (name, email, password) => {
     setError(null);
     try {
-      const data = await apiSignup({ name, email, password });
+      const data = await apiSignup(name, email, password);
       const nextUser = data && data.user ? data.user : data;
       if (mountedRef.current) {
         setUser(nextUser || null);
