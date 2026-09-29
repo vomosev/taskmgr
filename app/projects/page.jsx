@@ -187,7 +187,6 @@ function ProjectsView() {
                 htmlFor="project-name"
                 error={formError}
                 required
-                hint="For example: Website relaunch"
               >
                 <Input
                   id="project-name"
