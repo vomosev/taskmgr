@@ -71,7 +71,7 @@ function TasksPageInner() {
     setError('');
 
     try {
-      const data = await getTasks(activeFilters, { signal: controller.signal });
+      const data = await getTasks(activeFilters, controller.signal);
       if (!mountedRef.current || controller.signal.aborted) return;
       setTasks(Array.isArray(data) ? data : data?.tasks || []);
     } catch (err) {
