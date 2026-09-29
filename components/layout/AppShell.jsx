@@ -172,21 +172,6 @@ export default function AppShell({ children }) {
             <nav className="container mobile-menu__inner stack" aria-label="Mobile">
               {isAuthenticated ? (
                 <>
-                  {NAV_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className={
-                        isActive(link.href)
-                          ? 'mobile-menu__link is-active'
-                          : 'mobile-menu__link'
-                      }
-                      aria-current={isActive(link.href) ? 'page' : undefined}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
                   <span className="mobile-menu__user">Signed in as {user.name}</span>
                   <Button
                     variant="secondary"
